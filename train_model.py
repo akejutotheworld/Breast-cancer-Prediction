@@ -40,8 +40,9 @@ accuracy = accuracy_score(y_test, predictions)
 print(f"Model Accuracy: {accuracy:.2f}")
 
 # Save model
-with open("../YAKUBU_22CG031971_BC/model/breast_cancer_model.pkl", "wb") as f:
+with open("../model/breast_cancer_model.pkl", "wb") as f:
     pickle.dump(pipeline, f)
 
 print("Model saved successfully.")
+
 

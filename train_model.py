@@ -8,7 +8,7 @@ from sklearn.metrics import accuracy_score
 import pickle
 
 # Load dataset
-data = pd.read_csv("../YAKUBU_22CG031971_BC/data/breast_cancer.csv")
+data = pd.read_csv("data/breast_cancer.csv")
 
 # Drop unnecessary column if present
 if 'id' in data.columns:
@@ -44,3 +44,4 @@ with open("../YAKUBU_22CG031971_BC/model/breast_cancer_model.pkl", "wb") as f:
     pickle.dump(pipeline, f)
 
 print("Model saved successfully.")
+
